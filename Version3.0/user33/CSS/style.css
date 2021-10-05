@@ -16,15 +16,27 @@ tr {
 
 th {
 	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+	color: #ca0707;
+	background-color: #9fb61f;
 }
 
 td {
 
-	color: #272527
+	color: #a41aa4
 }
 
+body {
+	background-image: url("../images/dole-produce-fruit-medley.png"); 
+	background-color: rgb(255, 246, 246); 
+}
+
+ol {
+	list-style-type: lower-greek;
+}
+
+ul {
+	list-style-type: square;
+}
 
 
 	
