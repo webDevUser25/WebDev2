@@ -46,8 +46,21 @@
             margin: 20px;
         }
 
-        .table-striped tbody tr:nth-of-type(odd) {
+        p {
+            font-size: small;
+        }
+
+
+        .table-striped tbody tr:nth-of-type(odd){
             background-color: rgba(255, 0, 0, 0.3);
+        }
+
+        .table-striped tbody tr:nth-of-type(even){
+            background-color: rgba(255, 0, 0, 0.15);
+        }
+
+        ul {
+            list-style-type: square;
         }
     </style>
 </head>
@@ -65,28 +78,73 @@
         <a href="form.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Form Page</a>
         <div class="row">
             <div class="col-md-6">
-                <div class="demo-content">.col-md-6</div>
+                <div class="demo-content">
+                    <p>first half</p>
+                </div>
             </div>
             <div class="col-md-6">
-                <div class="demo-content bg-alt">.col-md-6</div>
+                <div class="demo-content bg-alt">
+                    <p>second half</p>
+                </div>
             </div>
         </div>
         <!--Row with two columns divided in 1:2 ratio-->
         <div class="row">
             <div class="col-md-4">
-                <div class="demo-content">.col-md-4</div>
+                <div class="demo-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et magnis dis parturient.
+                        Nulla aliquet porttitor lacus luctus accumsan tortor posuere. Odio eu feugiat pretium nibh.
+                        Porta lorem mollis aliquam ut porttitor. Elit duis tristique sollicitudin nibh sit amet commodo
+                        nulla. Commodo ullamcorper a lacus vestibulum sed arcu non. In iaculis nunc sed augue lacus.
+                        Adipiscing tristique risus nec feugiat in fermentum posuere. Nullam non nisi est sit amet.
+                        Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Suspendisse interdum
+                        consectetur libero id faucibus nisl.
+                    </p>
+                </div>
             </div>
             <div class="col-md-8">
-                <div class="demo-content bg-alt">.col-md-8</div>
+                <div class="demo-content bg-alt">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et magnis dis parturient.
+                        Nulla aliquet porttitor lacus luctus accumsan tortor posuere. Odio eu feugiat pretium nibh.
+                        Porta lorem mollis aliquam ut porttitor. Elit duis tristique sollicitudin nibh sit amet commodo
+                        nulla. Commodo ullamcorper a lacus vestibulum sed arcu non. In iaculis nunc sed augue lacus.
+                        Adipiscing tristique risus nec feugiat in fermentum posuere. Nullam non nisi est sit amet.
+                        Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Suspendisse interdum
+                        consectetur libero id faucibus nisl.
+
+                        In iaculis nunc sed augue lacus viverra. Dictumst quisque sagittis purus sit. A arcu cursus
+                        vitae congue. Sed felis eget velit aliquet sagittis id consectetur purus. Ipsum dolor sit amet
+                        consectetur. Consequat interdum varius sit amet. Rhoncus urna neque viverra justo nec ultrices
+                        dui. At tempor commodo ullamcorper a lacus. Risus sed vulputate odio ut. Quis viverra nibh cras
+                        pulvinar mattis nunc sed. Vel quam elementum pulvinar etiam non quam. Posuere sollicitudin
+                        aliquam ultrices sagittis orci a scelerisque purus. Viverra mauris in aliquam sem fringilla.
+                        Orci nulla pellentesque dignissim enim sit amet venenatis. Fermentum iaculis eu non diam
+                        phasellus vestibulum.</p>
+                </div>
             </div>
         </div>
         <!--Row with two columns divided in 1:3 ratio-->
         <div class="row">
             <div class="col-md-3">
-                <div class="demo-content">.col-md-3</div>
+                <div class="demo-content">
+                    <ul>
+                        <li>hi</li>
+                        <li>hello</li>
+                        <li>hey</li>
+                    </ul>
+                </div>
             </div>
             <div class="col-md-9">
-                <div class="demo-content bg-alt">.col-md-9</div>
+                <div class="demo-content bg-alt">
+                    <ul>
+                        <li>bye</li>
+                        <li>see you</li>
+                        <li>goodbye</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -135,19 +193,52 @@
                     <i class="fa fa-home"></i> Home
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa fa-bath"></i> Bath <span
-                        class="badge badge-pill badge-primary pull-right">236</span>
+                    <i class="fa fa-bath"></i> Bath <span class="badge badge-pill badge-primary pull-right">236</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa fa-shower"></i> Shower <span class="badge badge-pill badge-primary pull-right">12</span>
+                    <i class="fa fa-shower"></i> Shower <span
+                        class="badge badge-pill badge-primary pull-right">12</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa fa-space-shuttle"></i> Space bathroom <span class="badge badge-pill badge-primary pull-right">9</span>
+                    <i class="fa fa-space-shuttle"></i> Space bathroom <span
+                        class="badge badge-pill badge-primary pull-right">9</span>
                 </a>
             </div>
         </div>
     </div>
 
+    <div class="bs-example">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Row</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Clark</td>
+                    <td>Kent</td>
+                    <td>clarkkent@mail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>Carter</td>
+                    <td>johncarter@mail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Peter</td>
+                    <td>Parker</td>
+                    <td>peterparker@mail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
