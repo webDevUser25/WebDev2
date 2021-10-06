@@ -50,4 +50,16 @@ h1, h2, h3, h4, h5, h6{
   #morecontent {
 	background-color: yellow;
   }
-  
+  @import url(rainbow.css);
+          /* selected link */
+		  a:active {
+            color: #1f1fa8;
+        }
+
+        a.highlight:hover {
+            color: #ff0000;
+        }
+
+        div:hover {
+            background-color: rgb(16, 223, 238);
+        }
