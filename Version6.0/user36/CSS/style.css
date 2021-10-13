@@ -1,5 +1,5 @@
 .body-wideMargin {
-  margin: 50px;
+  margin: 5%;
   font-size: 100%;
   line-height: 1.5;
   font-family: Roboto;
@@ -32,6 +32,25 @@ h1 {
   margin-bottom: 1em;
 }
 
+h2 {
+  font-weight: bold;
+  margin-top:2.5%;
+  color: white;
+  text-shadow: 
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;  
+}
+
+h6 {
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 5px 0;
+  color: black;
+
+}
+
 .centered {
   position: absolute;
   top: 50%;
@@ -52,4 +71,68 @@ h1 {
 .carousel-inner img {
   width: 100%;
   height: 100%;
+}
+
+.overview {
+  padding:8%;
+  padding-top:5%;
+  padding-bottom:3%;
+  margin: 2.5%;
+  text-align:center;
+}
+
+section {
+  padding-bottom:5%;
+}
+
+.links {
+  color:black;
+  line-height: 2.25em;
+  font-size: 85%;
+}
+
+.links:hover {
+  color:black;
+}
+
+footer {
+  background-color: white;
+  padding: 2.5%;
+  border: solid black 2px;
+}
+
+.subfooter {
+  background-color: gray;
+  padding: 0.25%;
+  padding-top: 1%;
+  padding-left: 10%;
+  line-height: 1em;
+}
+
+hr {
+  margin-bottom: 8.5%;
+  background-color:black;
+  height:1px;
+  border: none;
+}
+
+.calltoaction {
+  margin-bottom:5%;
+  background-image: url(https://images.indagare.com/wp-content/uploads/LP-MemberStories-NewZealand4.jpg);
+}
+
+.btn-customCA {
+  color: white;
+  background-color: black;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 5%;
+  margin-top: 4%;
+  max-width: 100px;
+  height: 80%;
+  border-radius: 25%;
+}
+
+.btn-customCA:hover {
+  color:gray;
 }
