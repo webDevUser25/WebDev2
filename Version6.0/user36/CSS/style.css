@@ -136,3 +136,24 @@ hr {
 .btn-customCA:hover {
   color:gray;
 }
+
+th {
+  font-size: 35px;
+}
+
+p {
+  line-height: 175%;
+}
+
+.title {
+  text-align: center;
+  padding: 5%;
+  padding-bottom: 1%;
+  margin-bottom: 5%;
+  margin-left:11.5%;
+  margin-right:11.5%;
+}
+
+.image {
+  max-width:100%;
+}
