@@ -1,0 +1,51 @@
+@import url(rainbow.css);
+td:hover{
+    background-color: red;
+}
+
+td:hover {
+    background-color: orange;
+}
+
+td:hover {
+    background-color: yellow;
+}
+
+.background-green {
+    background-color: green;
+}
+
+.background-blue {
+    background-color: blue;
+}
+
+.background-indigo {
+    background-color: indigo;
+}
+
+.background-violet {
+    background-color: violet;
+}
+
+td:hover {
+    background-color: black;
+}
+
+div:hover{
+    background-color: rgb(red, green, blue);
+}
+
+a.highlight:hover{
+    font-size: 22px;
+    color: red 
+}
+
+/* visited link */
+a:visited {
+    color:rgb(red, green, blue)
+}
+
+/* mouse over link */
+a:hover{
+    color: hotpink;
+}
