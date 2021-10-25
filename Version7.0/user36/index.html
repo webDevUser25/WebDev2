@@ -39,7 +39,8 @@
     <main>
         <div id="built-in-functions">
             <!-- ALERT-->
-            <h1 onMouseover="alert('GO Sabers!'); alert('Hello'); alert('Goodbye');" value="Click Me!">Shakopee High School</h1>
+            <h1 onMouseover="alert('GO Sabers!'); alert('Hello'); alert('Goodbye');" value="Click Me!" style="display:inline-block;">Shakopee High
+                School</h1>
             <!--PRINT-->
             <script>
                 function printWindow() {
@@ -176,8 +177,23 @@
             function secondSelector() {
                 var x = document.querySelectorAll("li");
                 var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.backgroundColor = "#17a2b8";
+                for (i = 0; i < x.length; i=i+2) {
+                    x[i].style.color = "#17a2b8";
+                }
+                var x = document.querySelectorAll("li");
+                var i;
+                for (i = 1; i < x.length; i=i+2) {
+                    x[i].style.color = "#b8b8b8";
+                }
+                var x = document.querySelectorAll("ol li li");
+                var i;
+                for (i = 1; i < x.length; i=i+2) {
+                    x[i].style.color = "#17a2b8";
+                }
+                var x = document.querySelectorAll("ol li li");
+                var i;
+                for (i = 0; i < x.length; i=i+2) {
+                    x[i].style.color = "#b8b8b8";
                 }
             }
             function thirdSelector() {
