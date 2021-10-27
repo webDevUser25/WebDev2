@@ -39,9 +39,7 @@
     <main>
         <div id="built-in-functions">
             <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
+           
             <!--PRINT-->
             <script>
                 function printWindow(){
@@ -108,6 +106,7 @@
                 </div>
             </div>
         </div>
+        <h1 style="display: inline-block;" onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
         <hr>
         <div class="container-fluid">
             <div class="row">
@@ -141,18 +140,13 @@
                 </div>
 
                 <div class="col-md-2 text-center">
-                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it
-                        1</button>
+                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it 1</button>
 
-                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it
-                        2</button>
+                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it 2</button>
 
-                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it
-                        3</button>
+                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it 3</button>
 
-                    <button class="btn btn-primary btn-lg mt-3 container" onclick="window.location.reload()">Try
-                        it
-                        4</button>
+                    <button class="btn btn-primary btn-lg mt-3 container" onclick="window.location.reload()">Try it 4</button>
                 </div>
 
                 <div class="col-md-5">
@@ -178,7 +172,7 @@
             function secondSelector() {
                 var x = document.querySelectorAll("li");
                 var i;
-                for (i = 0; i < x.length; i++) {
+                for (i = 0; i < x.length; i=i+2) {
                     x[i].style.backgroundColor = "#17a2b8";
                 }
             }
