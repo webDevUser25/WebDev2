@@ -91,7 +91,7 @@
 
         function startit() {
             if (startPressed) {
-                alert("Already started. Press stop to stop");
+                alert("Already started. Continue waiting.");
                 return;
             }
             else {
@@ -103,7 +103,7 @@
 
     </script>
     <p>Test your Response time!</p>
-    Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+    Click on "Start" first, and wait until the background color changes. As soon as it changes, hit the numbered buttons.
     <form name="response">
         Change background color in:
         <select value=1 id="bgcolor" name="bgColorChange">
@@ -114,6 +114,9 @@
             <option>cadetblue
             <option>darkorchid
             <option>coral
+            <option>white
+            <option>black
+            <option>orange
         </select>
         <input type="button" value="start" onClick="startit()">
         <span id="stopBtn1"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
