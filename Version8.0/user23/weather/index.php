@@ -40,7 +40,7 @@ body {
     echo "green";    
     }
     if ($data->main->temp < 30){
-        echo "red";
+        echo "yellow";
     }?>
 }
 
