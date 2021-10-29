@@ -1,7 +1,7 @@
 <?php
-$apiKey = "API KEY"; //You will need to add in the 
+$apiKey = "9f722550fdc5493214edfa8aed5f45f9"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
-$units = "metric";//metric-Celcius  imperial-Farhenheit
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
 if ($units == 'metric'){//Changes the $temp varaible to match 
     $temp = "C";
 }
@@ -35,6 +35,13 @@ body {
     font-family: Arial;
     font-size: 0.95em;
     color: #929292;
+    background-color:<?php 
+    if($data->main->temp >= 30){
+    echo "green";    
+    }
+    if ($data->main->temp < 30){
+        echo "red";
+    }?>
 }
 
 .report-container {
@@ -43,6 +50,14 @@ body {
     border-radius: 2px;
     width: 550px;
     margin: 0 auto;
+    background-color:<?php 
+    if($data->main->temp >= 30){
+    echo "blue";    
+    }
+    if ($data->main->temp < 30){
+        echo "red";
+    }?>
+    
 }
 
 .weather-icon {
