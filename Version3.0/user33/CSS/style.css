@@ -5,17 +5,38 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#dadada; 
 }
 
 th {
 	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+	color: #ca0707;
+	background-color: #9fb61f;
 }
+
+td {
+
+	color: #a41aa4
+}
+
+body {
+	background-image: url("../images/dole-produce-fruit-medley.png"); 
+	background-color: rgb(255, 246, 246); 
+}
+
+ol {
+	list-style-type: lower-greek;
+}
+
+ul {
+	list-style-type: square;
+}
+
+
+	
