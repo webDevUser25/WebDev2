@@ -1,16 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0 
-    Name:
+    Name: Oliver Jörgen Meyer
     Date Completed: 
 -->
 
 <head>
+    <title>My Bootstrap Sample</title>
 
+    <!-- Bootstrap meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Bootstrap sample">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: rgba(111, 45, 155, 0.3);
+        }
+
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .demo-content.bg-alt {
+            background: #2761a3;
+        }
+
+        .bs-example {
+            margin: 20px;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="container mt-3">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+                <i class="fa fa-twitter"></i> Home
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-camera-retro"></i> Photos <span
+                    class="badge badge-pill badge-primary pull-right">0</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-spinner fa-spin"></i> Music <span
+                    class="badge badge-pill badge-primary pull-right">0</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-spinner fa-pulse"></i> Movies <span
+                    class="badge badge-pill badge-primary pull-right">0</span>
+            </a>
+        </div>
+    </div>
+    <div class="bs-example">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Row</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lake</td>
+                    <td>Oleso</td>
+                    <td>Loleso@mail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Asher</td>
+                    <td>Colby</td>
+                    <td>brightsidecolby@mail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Jurge</td>
+                    <td>Heizen</td>
+                    <td>HeizJ@mail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="jumbotron">
+        <h4> Bootstrap</h4>
+        <p class="lead">
+        </p>
+    </div>
+
+    <!---------Three Column Layouts--------->
+    <div class="container mt-3">
+        <!--Row with two equal columns-->
+        <div class="row">
+            <div class="col-md-11">
+                <div class="demo-content"></div>
+            </div>
+            <div class="col-md-1">
+                <div class="demo-content bg-alt"></div>
+            </div>
+        </div>
+        <!--Row with two columns divided in 1:2 ratio-->
+        <div class="row">
+            <div class="col-md-10">
+                <div class="demo-content"></div>
+            </div>
+            <div class="col-md-2">
+                <div class="demo-content bg-alt"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="demo-content"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="demo-content bg-alt"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="demo-content"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="demo-content bg-alt"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="demo-content"></div>
+            </div>
+            <div class="col-md-8">
+                <div class="demo-content bg-alt"></div>
+            </div>
+        </div>
+        <!--Row with two columns divided in 1:3 ratio-->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="demo-content"></div>
+            </div>
+            <div class="col-md-9">
+                <div class="demo-content bg-alt"></div>
+            </div>
+        </div>
+
+        <!---------Auto Layout Columns--------->
+        <div class="row">
+            <div class="col demo-content">one</div>
+            <div class="col demo-content bg-alt">two</div>
+            <div class="col demo-content">three</div>
+            <div class="col demo-content bg-alt">four</div>
+            <div class="col demo-content">five</div>
+            <div class="col demo-content bg-alt">six</div>
+        </div>
+
+        <!---------Flexible Layouts--------->
+        <div class="row">
+            <div class="col-md-4 col-lg-3">
+                <div class="demo-content">Better</div>
+            </div>
+            <div class="col-md-8 col-lg-6">
+                <div class="demo-content bg-alt"><img
+                        src="https://cdn.shopify.com/s/files/1/0105/4542/products/lilpeep-comeoverwhenursober1n2-2_1200x.jpg?v=1571265507"
+                        alt="lil peep come over when youre sober vol.1" width="500px" height="500px"></div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="demo-content">Off (dying)</div>
+            </div>
+        </div>
+    </div>
 
 </body>
+
+<!-- Footer -->
+<footer class="footer js-footer anim-inview-check-enabled" style="background-color: rgb(244, 245, 247);">
+    <div class="new-footer no-padding-bottom">
+        <div class="new-footer__wrap--top">
+            <div class="new-footer__navigation-container">
+                <nav aria-label="Prada Navigation Footer" class="new-footer__navigation-container__navigation">
+                    <ul role="menubar" aria-label="Prada Navigation Footer" class="new-footer-menu">
+                        <li class="new-footer-menu__section"><input type="checkbox" id="checkFooter0"
+                                class="check-accordion-footer"> <label for="checkFooter0"
+                                class="new-footer-menu__section__title-container"><a href="javascript:void(0)"
+                                    role="menuitem" title="prnux_need_help"
+                                    aria-expanded="visibleItemIndex == 0 ? 'true' : 'false'"
+                                    class="new-footer-menu__section__title-container__link"
+                                    style="color: rgb(0, 0, 0);">
+                                    <h3>Do you need help?</h3>
+                                </a>
+                                <div class="new-footer-menu__section__title-container__icon"><span
+                                        class="icon-plus"></span> <span class="icon-minus"></span></div>
+                            </label>
+                            <!---->
+
+                            </a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="new-footer-menu__section"><input type="checkbox" id="checkFooter1"
+                            class="check-accordion-footer"> <label for="checkFooter1"
+                            class="new-footer-menu__section__title-container"><a href="javascript:void(0)"
+                                role="menuitem" title="prnux_need_help"
+                                aria-expanded="visibleItemIndex == 1 ? 'true' : 'false'"
+                                class="new-footer-menu__section__title-container__link" style="color: rgb(0, 0, 0);">
+                                <h3>Do we care?</h3>
+                            </a>
+                            <div class="new-footer-menu__section__title-container__icon"><span class="icon-plus"></span>
+                                <span class="icon-minus"></span>
+                            </div>
+
+                            <!---->
+
+                            </a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li class="new-footer-menu__section"><input type="checkbox" id="checkFooter2"
+                            class="check-accordion-footer"> <label for="checkFooter2"
+                            class="new-footer-menu__section__title-container"><a href="javascript:void(0)"
+                                role="menuitem" title="prnux_legal"
+                                aria-expanded="visibleItemIndex == 2 ? 'true' : 'false'"
+                                class="new-footer-menu__section__title-container__link" style="color: rgb(0, 0, 0);">
+                                <h3>Can you stop please?</h3>
+                            </a>
+                            <div class="new-footer-menu__section__title-container__icon"><span class="icon-plus"></span>
+                                <span class="icon-minus"></span>
+                            </div>
+
+                            <!---->
+
+                            </a></li>
+                    </ul>
+                    </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="new-footer__right-section-container">
+                <div class="new-footer__right-section-container__wrapper">
+                    <div class="new-footer__newsletter-container">
+                        <form class="nlBox"><label for="email-nl_60" class="nlBox__label"
+                                style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">
+                                    Subscribe to our newsletter, you are pathetic
+                                </span></label>
+                            <div class="nlBox__inputWrapper" style="border-color: rgb(0, 0, 0);"><input id="email-nl_60"
+                                    type="email" title="email-nl" name="email-nl"
+                                    placeholder="Insert your e-mail address" data-cs-override-id="email"
+                                    data-cs-mask="true" class="nlBox__input" style="color: rgb(0, 0, 0);"> <button
+                                    disabled="disabled" class="nlBox__btn disabled"
+                                    style="background: rgb(21, 57, 131);"><span aria-label="send e-mail"
+                                        class="nlBox__btnIcon icon-arrow-right"
+                                        style="color: rgb(0, 0, 0);"></span></button></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="wrap-bottom-global">
+            <div class="new-footer__copyright-text" style="color: rgb(0, 0, 0);">
+
+                ©Jörgen 2004 - 2022
+
+
+            </div>
+            <!---->
+        </div>
+        <div class="new-footer__wrap--bottom new-footer__wrap--bottom-us">
+            <div class="new-footer__california-privacy-act-container">
+                cuck-sumor privacy act:
+                <a href="stockx.com" title="" role="menuItem"
+                    class="new-footer__california-privacy-act-container__link" style="color: rgb(148, 71, 71);">
+                    sell
+                    my info</a>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="new-footer__cta-container "
+                style="transition: all 0.6s linear 0s; margin-bottom: 0px; bottom: 50px;">
+                <div class="new-footer__scroll-top"><a href="#" class="new-footer__scroll-top-btn"><span
+                            class="new-footer__scroll-top-icon icon-arrow-left-slash"></span></a></div>
+                <div class="live-chat-component show"><span id="chatbutton" style="display: none;"></span>
+                    <!---->
+                    <div tabindex="-1" id="chat-container" style="display: none;"><span id="close-chat"
+                            style="left: auto; right: 0px; top: 0px; background: url(&quot;https://pradagroupdyn365storage.blob.core.windows.net/webchat/images/close.png&quot;) center center no-repeat; padding: 17px 20px;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+    </div>
+</footer>
+
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3"> Lil peep; exstock
+    <a href="https://open.spotify.com/album/52JymrguPgkmmwLaWIusst">How to fall</a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </html>
