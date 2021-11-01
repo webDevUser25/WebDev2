@@ -1,6 +1,6 @@
 .body-wideMargin {
   margin: 50px;
-  font-size: 100%;
+  font-size:100%;
   line-height: 1.5;
   font-family: Roboto;
 }
@@ -31,3 +31,15 @@ h1 {
   border-bottom: 1px solid black;
   margin-bottom: 1em;
 }
+table {
+  width: 40%;
+}
+table, td {
+  border: solid black 2px;
+}
+table.menu {
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 500px;
+}
+

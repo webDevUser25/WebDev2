@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap);
-#gallery {
+#bat {
     font-family: "Lucida Console", "Courier New", monospace;
   
     line-height: 1.5em;
@@ -39,15 +39,15 @@ img {
     height: 320px;
 }
 .container:hover .flipper {
-    transform: rotateY(200deg);
+    transform: rotateY(180deg);
     
 }
 
   .description{
-color: blue;
+color: rgb(132, 0, 255);
 }
 a {
-    color: red;
+    color: rgb(0, 100, 255);
   }
   .caption, .back h1 {
     font-family: "Orbitron", sans-serif;
