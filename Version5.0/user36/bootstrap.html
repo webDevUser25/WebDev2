@@ -22,7 +22,7 @@
     <!-- Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Custom -->
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../user36/CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -49,6 +49,33 @@
         .table-striped tbody tr:nth-of-type(odd) {
             background-color: rgba(255, 0, 0, 0.3);
         }
+
+        .table-striped tbody tr:nth-of-type(even) {
+            background-color: rgba(255, 0, 0, 0.15);
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        .btn-custom {
+            color: #fff;
+            background-color: green;
+            border-color: #dc3545;
+        }
+
+
+        .btn-custom:hover {
+            color: #fff;
+            background-color: black;
+            border-color: #bd2130;
+        }
+
+        .btn-custom2 {
+            color: #fff;
+            background-color: #bd2130;
+            border-color: #bd2130;
+        }
     </style>
 </head>
 
@@ -62,31 +89,78 @@
     <!---------Three Column Layouts--------->
     <div class="container mt-3">
         <!--Row with two equal columns-->
-        <a href="form.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Form Page</a>
         <div class="row">
             <div class="col-md-6">
-                <div class="demo-content">.col-md-6</div>
+                <div class="demo-content">
+                    <a href="form.html" class="btn btn-custom btn-hover btn-lg active" role="button"
+                        aria-pressed="true">Form
+                        Page</a>
+                </div>
             </div>
             <div class="col-md-6">
-                <div class="demo-content bg-alt">.col-md-6</div>
+                <div class="demo-content bg-alt">
+                    <a href="../../Version4.0/user36/images/Mashed potato and gravy.jpeg"
+                        class="btn btn-custom2 btn-lg active" role="button" aria-pressed="true">Don't Press</a>
+                </div>
             </div>
         </div>
         <!--Row with two columns divided in 1:2 ratio-->
         <div class="row">
             <div class="col-md-4">
-                <div class="demo-content">.col-md-4</div>
+                <div class="demo-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et magnis dis parturient.
+                        Nulla aliquet porttitor lacus luctus accumsan tortor posuere. Odio eu feugiat pretium nibh.
+                        Porta lorem mollis aliquam ut porttitor. Elit duis tristique sollicitudin nibh sit amet commodo
+                        nulla. Commodo ullamcorper a lacus vestibulum sed arcu non. In iaculis nunc sed augue lacus.
+                        Adipiscing tristique risus nec feugiat in fermentum posuere. Nullam non nisi est sit amet.
+                        Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Suspendisse interdum
+                        consectetur libero id faucibus nisl.
+                    </p>
+                </div>
             </div>
             <div class="col-md-8">
-                <div class="demo-content bg-alt">.col-md-8</div>
+                <div class="demo-content bg-alt">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et magnis dis parturient.
+                        Nulla aliquet porttitor lacus luctus accumsan tortor posuere. Odio eu feugiat pretium nibh.
+                        Porta lorem mollis aliquam ut porttitor. Elit duis tristique sollicitudin nibh sit amet commodo
+                        nulla. Commodo ullamcorper a lacus vestibulum sed arcu non. In iaculis nunc sed augue lacus.
+                        Adipiscing tristique risus nec feugiat in fermentum posuere. Nullam non nisi est sit amet.
+                        Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Suspendisse interdum
+                        consectetur libero id faucibus nisl.
+
+                        In iaculis nunc sed augue lacus viverra. Dictumst quisque sagittis purus sit. A arcu cursus
+                        vitae congue. Sed felis eget velit aliquet sagittis id consectetur purus. Ipsum dolor sit amet
+                        consectetur. Consequat interdum varius sit amet. Rhoncus urna neque viverra justo nec ultrices
+                        dui. At tempor commodo ullamcorper a lacus. Risus sed vulputate odio ut. Quis viverra nibh cras
+                        pulvinar mattis nunc sed. Vel quam elementum pulvinar etiam non quam. Posuere sollicitudin
+                        aliquam ultrices sagittis orci a scelerisque purus. Viverra mauris in aliquam sem fringilla.
+                        Orci nulla pellentesque dignissim enim sit amet venenatis. Fermentum iaculis eu non diam
+                        phasellus vestibulum.</p>
+                </div>
             </div>
         </div>
         <!--Row with two columns divided in 1:3 ratio-->
         <div class="row">
             <div class="col-md-3">
-                <div class="demo-content">.col-md-3</div>
+                <div class="demo-content">
+                    <ul>
+                        <li>hi</li>
+                        <li>hello</li>
+                        <li>hey</li>
+                    </ul>
+                </div>
             </div>
             <div class="col-md-9">
-                <div class="demo-content bg-alt">.col-md-9</div>
+                <div class="demo-content bg-alt">
+                    <ul>
+                        <li>bye</li>
+                        <li>see you</li>
+                        <li>goodbye</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -114,40 +188,154 @@
         </div>
         <div class="container mt-3">
             <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action active">
+                <a href="https://www.github.com/306213" target="_blank"
+                    class="list-group-item list-group-item-action active">
                     <i class="fa fa-home"></i> Home
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="https://www.github.com/306213" target="_blank" class="list-group-item list-group-item-action">
                     <i class="fa fa-camera"></i> Pictures <span
                         class="badge badge-pill badge-primary pull-right">145</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css" target="_blank"
+                    class="list-group-item list-group-item-action">
                     <i class="fa fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">50</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="https://mdbootstrap.com/docs/b4/jquery/navigation/footer/" target="_blank"
+                    class="list-group-item list-group-item-action">
                     <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">8</span>
+                </a>
+                <a href="https://www.w3schools.com/python/python_strings.asp" target="_blank"
+                    class="list-group-item list-group-item-action">
+                    <i class="fa fa-check"></i> Checkmark <span
+                        class="badge badge-pill badge-primary pull-right">22</span>
+                </a>
+                <a href="https://www.ilovepdf.com/" target="_blank" class="list-group-item list-group-item-action">
+                    <i class="fa fa-suitcase"></i> Suitcase <span
+                        class="badge badge-pill badge-primary pull-right">22</span>
+                </a>
+                <a href="https://apstudents.collegeboard.org/" target="_blank"
+                    class="list-group-item list-group-item-action">
+                    <i class="fa fa-phone"></i> Phone Notifications <span
+                        class="badge badge-pill badge-primary pull-right">1028</span>
                 </a>
             </div>
         </div>
         <div class="container mt-3">
             <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action active">
+                <a href="https://drive.google.com/" target="_blank"
+                    class="list-group-item list-group-item-action active">
                     <i class="fa fa-home"></i> Home
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa fa-bath"></i> Bath <span
-                        class="badge badge-pill badge-primary pull-right">236</span>
+                <a href="https://loremipsum.io/generator/?n=2&t=p" target="_blank"
+                    class="list-group-item list-group-item-action">
+                    <i class="fa fa-bath"></i> Bath <span class="badge badge-pill badge-primary pull-right">236</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa fa-shower"></i> Shower <span class="badge badge-pill badge-primary pull-right">12</span>
+                <a href="https://www.w3schools.com/html/html_images.asp" target="_blank"
+                    class="list-group-item list-group-item-action">
+                    <i class="fa fa-shower"></i> Shower <span
+                        class="badge badge-pill badge-primary pull-right">12</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa fa-space-shuttle"></i> Space bathroom <span class="badge badge-pill badge-primary pull-right">9</span>
+                <a href="https://www.codecademy.com/courses/learn-html/lessons/html-forms/exercises/forms-intro"
+                    target="_blank" class="list-group-item list-group-item-action">
+                    <i class="fa fa-space-shuttle"></i> Space bathroom <span
+                        class="badge badge-pill badge-primary pull-right">9</span>
                 </a>
             </div>
         </div>
     </div>
 
+    <div class="bs-example">
+        <table class="table table-striped">
+            <thead>
+                <tr class="col-md-6">
+                    <th>Row</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Clark</td>
+                    <td>Kent</td>
+                    <td>clarkkent@mail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>Carter</td>
+                    <td>johncarter@mail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Peter</td>
+                    <td>Parker</td>
+                    <td>peterparker@mail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div class="container ">
+            <div class="row calltoaction center">
+                <h1 class="col-md-6">Buy Some Random Food</h1>
+                <a href="https://www.grubhub.com/" target="_blank" class="col-md-6 btn btn-customCA btn-lg active">Buy
+                    It!</a>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="font-weight-bold">Contact Food</h1>
+                        <a class="links" href="../../Version4.0/user36/images/Fried chicken.jpeg">Fried Chicken</a>
+                        <br>
+                        <a class="links" href="../../Version4.0/user36/images/Mashed potato and gravy.jpeg">Mashed
+                            Potatos and Gravy</a>
+                        <br>
+                        <a class="links" href="../../Version4.0/user36/images/Spaghetti.jpeg">Spaghetti</a>
+                        <br>
+                        <a class="links" href="../../Version4.0/user36/images/Pho.jpeg">Pho</a>
+                        <br>
+                        <a class="links" href="../../Version4.0/user36/images/Burritos.jpeg">Burritos</a>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="font-weight-bold">Get Help</h6>
+                    <a class="links" href="https://www.mhealthfairview.org/locations/M-Health-Fairview-Ridges-Hospital"
+                        target="_blank">
+                        Fairview Ridges Hospital</a>
+                    <br>
+                    <a class="links" href="https://tria.com/" target="_blank">Tria Hospital</a>
+                    <br>
+                    <a class="links" href="https://mhealthfairview.org/locations/m-health-fairview-southdale-hospital"
+                        target="_blank">Fairview Southdale Hospital</a>
+                    <br>
+                    <a class="links"
+                        href="https://www.healthpartners.com/care/hospitals/methodist/?utm_campaign=hospital_locallistings_20m1_care_
+                        methodist&utm_source=googlemybusiness_&utm_medium=organic&utm_content=
+                        methodist-hospital_localpack_conversion&utm_term=_v1__" target="_blank">Methodist Hospital</a>
+                    <br>
+                    <a class="links" href="https://www.stfrancis-shakopee.com/" target="_blank">St.Francis Hospital</a>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="font-weight-bold">Social Media</h6>
+                    <a href="https://twitter.com/?lang=en" target="_blank">
+                        <i class="fa fa-twitter mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa fa-instagram mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a href="https://www.snapchat.com/" target="_blank">
+                        <i class="fa fa-snapchat mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a href="https://www.pinterest.com/" target="_blank">
+                        <i class="fa fa-pinterest mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="subfooter">
+        <p class="small">&copy;2021 Fake Corporations Association</p>
+    </footer>
 </body>
 
 </html>
