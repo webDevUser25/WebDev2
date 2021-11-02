@@ -1,0 +1,129 @@
+<body>
+    <script language="JavaScript">
+
+        var startTime = new Date();
+        var endTime = new Date();
+        var startPressed = false;
+        var bgChangeStarted = false;
+        var maxWait = 20;
+        var timerID;
+        var stopBtnX;
+        var stopBtnY;
+        var stopCounter = 0;
+
+        function getRandom(min, max) {
+            min = Math.ceil(-50);
+            max = Math.floor(700);
+            stopBtnX = Math.floor(Math.random() * (max - min + 1) + min);
+            stopBtnY = Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        function optionselect() {
+            var bgcolorval = document.getElementById("bgcolor").value
+            var btncolor = bgcolorval
+        }
+
+        function startTest() {
+            var bgcolorval = document.getElementById("bgcolor").value
+            var btncolor= bgcolorval
+            document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+            bgChangeStarted = true;
+            startTime = new Date();
+            var i;
+            optionselect();
+            for (i = 1; i < 4; i++) {
+                getRandom();
+                document.getElementById("stopBtn" + i).innerHTML = '<input style="background:'+btncolor+'; position: relative; left:' + stopBtnX + 'px; top:' + stopBtnY + 'px;" type="button" value="'+ i +'" onClick="stopTest()">';
+            }
+        }
+
+        function remark(responseTime) {
+            var responseString = "";
+            if (responseTime < 0.20)
+                responseString = "Well done!";
+            if (responseTime >= 0.20 && responseTime < 0.30)
+                responseString = "Nice!";
+            if (responseTime >= 0.40 && responseTime < 0.50)
+                responseString = "Could be better...";
+            if (responseTime >= 0.50 && responseTime < 0.80)
+                responseString = "Keep practicing!";
+            if (responseTime >= 0.80 && responseTime < 1.1)
+                responseString = "Have you been day dreaming again?";
+            if (responseTime >= 1.1)
+                responseString = "Did you fall asleep?";
+            return responseString;
+        }
+
+        function stopTest() {
+            stopCounter = stopCounter + 1
+            if (stopCounter == 3) {
+                endTime = new Date();
+                var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
+                document.body.style.background = "white";
+                alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+                startPressed = false;
+                bgChangeStarted = false;
+                stopCounter = 0
+            }
+            else {
+                document.getElementById('stopBtn1').onclick = function() {
+                    document.getElementById('stopBtn1').innerHTML = '<input style="display:none;" type="button" value="stop" onClick="stopTest()">';
+                }
+                document.getElementById('stopBtn2').onclick = function() {
+                    document.getElementById('stopBtn2').innerHTML = '<input style="display:none;" type="button" value="stop" onClick="stopTest()">';
+                }
+                document.getElementById('stopBtn3').onclick = function() {
+                    document.getElementById('stopBtn3').innerHTML = '<input style="display:none;" type="button" value="stop" onClick="stopTest()">';
+                }
+            }
+        }
+
+
+        var randMULTIPLIER = 0x015a4e35;
+        var randINCREMENT = 1;
+        var today = new Date();
+        var randSeed = today.getSeconds();
+
+        function randNumber() {
+            randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+            return ((randSeed >> 15) & 0x7fff) / 32767;
+        }
+
+        function startit() {
+            if (startPressed) {
+                alert("Already started. Continue waiting.");
+                return;
+            }
+            else {
+                getRandom();
+                startPressed = true;
+                timerID = setTimeout('startTest()', 6000 * randNumber());
+            }
+        }
+
+    </script>
+    <p>Test your Response time!</p>
+    Click on "Start" first, and wait until the background color changes. As soon as it changes, hit the numbered buttons.
+    <form name="response">
+        Change background color in:
+        <select value=1 id="bgcolor" name="bgColorChange">
+            <option selected>deeppink
+            <option>aliceblue
+            <option>crimson
+            <option>darkkhaki
+            <option>cadetblue
+            <option>darkorchid
+            <option>coral
+            <option>white
+            <option>black
+            <option>orange
+            <option>gray
+            <option>purple
+            <option>green
+        </select>
+        <input type="button" value="start" onClick="startit()">
+        <span id="stopBtn1"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+        <span id="stopBtn2"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+        <span id="stopBtn3"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+    </form>
+</body>

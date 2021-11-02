@@ -41,6 +41,7 @@ h1 {
     border-bottom: 1px solid black;
     margin-bottom: 1em;
 }
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -68,3 +69,4 @@ h1 {
     background-color: #04AA6D;
     color: white;
   }
+
