@@ -1,0 +1,7 @@
+body {
+  background-image: url(https://i.pinimg.com/originals/d3/f3/09/d3f309e0564fa13b3d66fd193bd685fa.jpg);
+  background-size: contain;
+}
+div li::marker {
+  color: red;
+}

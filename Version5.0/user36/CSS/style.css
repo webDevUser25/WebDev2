@@ -1,0 +1,47 @@
+h6 {
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 5px 0;
+    color: black;
+
+}
+
+.links {
+    color:black;
+    line-height: 2.25em;
+    font-size: 85%;
+}
+
+footer {
+    background-color: white;
+    padding: 2.5%;
+    border-top: solid black;
+}
+
+.subfooter {
+    background-color: gray;
+    padding: 0.25%;
+    padding-top: 1%;
+    padding-left: 10%;
+    line-height: 1em;
+}
+
+.links:hover {
+    color:black;
+}
+
+.calltoaction {
+    color:black; 
+    padding-bottom: 5%;
+    margin-left: 15%;
+}
+
+.btn-customCA {
+    color: white;
+    background-color: black;
+    border-color: gray;
+    margin-left:10%;
+    font-size: vw;
+    max-width: 100px;
+    height: 80%;
+}

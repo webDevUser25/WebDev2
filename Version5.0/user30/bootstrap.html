@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0 
-    Name:
+    Name: Nick Miller
     Date Completed: 
 -->
 
@@ -48,7 +48,44 @@
         }
 
         .table-striped tbody tr:nth-of-type(odd) {
-            background-color: rgba(255, 0, 0, 0.3);
+            background-color: rgba(206, 16, 16, 0.3);
+        }
+
+        img {
+            width: 300px;
+        }
+
+        .btn-primary:not(:disabled):not(.disabled).active,
+        .btn-primary:not(:disabled):not(.disabled):active,
+        .show>.btn-primary.dropdown-toggle {
+            color: rgb(219, 25, 25);
+            background-color: #eeff00;
+            border-color: #007bff;
+        }
+
+        .panel-footer.panel-custom {
+            background: red;
+            color: white;
+        }
+
+        .page-footer {
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+
+        .btn-danger {
+            background-color: lawngreen;
+            color: blue;
+            border-color: black;
+        }
+
+        .fa {
+            color: red;
+        }
+
+        .a {
+            color: green;
         }
     </style>
 </head>
@@ -77,13 +114,14 @@
                 <div class="demo-content">.col-md-4</div>
             </div>
             <div class="col-md-8">
-                <div class="demo-content bg-alt">.col-md-8</div>
+                <div class="demo-content bg-alt"><img src="../../Version3.0/user30/images/Audi RS3.jpeg"></div>
             </div>
         </div>
         <!--Row with two columns divided in 1:3 ratio-->
         <div class="row">
             <div class="col-md-3">
-                <div class="demo-content">.col-md-3</div>
+                <div class="demo-content"><a href="form.html" class="btn btn-primary btn-lg active" role="button"
+                        aria-pressed="true">Form Page</a></div>
             </div>
             <div class="col-md-9">
                 <div class="demo-content bg-alt">.col-md-9</div>
@@ -96,8 +134,7 @@
             <div class="col demo-content bg-alt">Column two</div>
             <div class="col demo-content">Column three</div>
             <div class="col demo-content bg-alt">Column four</div>
-            <div class="col demo-content">Column five</div>
-            <div class="col demo-content bg-alt">Column six</div>
+            <div class="col demo-content"></div>
         </div>
 
         <!---------Flexible Layouts--------->
@@ -167,6 +204,10 @@
                 <a href="#" class="list-group-item list-group-item-action">
                     <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">8</span>
                 </a>
+                <a href="https://www.github.com/232332" target="_blank" class="list-group-item list-group-item-action">
+                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                    Pictures <span class="badge badge-pill badge-primary pull-right">145</span>
+                </a>
             </div>
         </div>
 
@@ -174,11 +215,145 @@
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action active">
                     <i class="fa fa-shower" aria-hidden="true"></i> Home
-    </div>
-        
-        <a href="form.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Form Page</a>
-    </div>
+            </div>
 
+            <a href="form.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Form Page</a>
+        </div>
+    </div>
 </body>
+
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+
+                <!-- Content -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">This is my footer</h5>
+                <p>Click on a random link to play link roulette</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://www.porsche.com/usa/" target="_blank">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <hr>
+
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+        </li>
+        <li class="list-inline-item">
+            <a href="https://signup.com/" target="_blank" class="btn btn-danger btn-rounded">Sign up!</a>
+        </li>
+    </ul>
+    <!-- Call to action -->
+
+    <hr>
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+            <a href="https://www.facebook.com/" target="_blank" class="btn-floating btn-fb mx-1">
+                <i class="fa fa-facebook-f"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a href="https://twitter.com/" target="_blank" class="btn-floating btn-tw mx-1">
+                <i class="fa fa-twitter"> </i>
+                
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a href="https://www.google.com/?safe=active&ssui=on" target="_blank" class="btn-floating btn-gplus mx-1">
+                <i class="fa fa-google"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1">
+                <i class="fa fa-youtube-play"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating btn-dribbble mx-1">
+                <i class="fa fa-instagram"> </i>
+            </a>
+        </li>
+    </ul>
+    <!-- Social buttons -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/">this is the bootstrap website</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </html>

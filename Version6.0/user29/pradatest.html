@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>About me: Shoes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="images/limefav.png">
+<style>
+    tr:nth-child(even) {
+        background-color: #9931905d;
+    }
+
+
+    #background-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        overflow: hidden;
+        opacity: 50%;
+        width: 12%;
+        height: 0;
+        transition: .8s ease-in-out;
+    }
+
+
+    .container:hover .overlay {
+        bottom: 0;
+        height: 30%;
+    }
+
+    #myDIV {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+
+    #myBtn:hover {
+        background: #ddd;
+        color: black;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+        font-family: "Montserrat", sans-serif
+    }
+</style>
+
+<body>
+    <video id="background-video" autoplay loop muted
+        poster="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8VFRUVDxUPFRUPFRUPFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRkrKys3Ny0rKysrNysrNysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDERFAQAAAAAAACigioIqooAioqCoAoCKogCiKACAACACgqKg5FRQAABQQAAAABBQBQgKACCCoIogCgCgAACgAiACgoIICKAAKmCgigKigCGKgKAgAACKAACCoIogqqAgACACgCooIoIAqIKIIAooCKiooCKgAAKIoAACoAqACCoIAAAAKigAAKgAAKAAgqKgAKAIAAAqAAAoigAAAAVKoCAKEFEQABFBQBUVA0AAAAUQBAVAAAFQAAAABBUBVAAEUAAAAAAAAAFBAADAAAARcFEFRAAAAAAAAEAAFQFUAAIAIoACAqoAAoIAqACKAAAAgoCACAAoAIAAAKACCiAqgAAAAAAAoiggCgAAqQQAFUwBEQVAABAAABQAQAAAFFEVFAAAAAAAAAVQRUQFQBagUABQRUQAFQAAAQAAABQAQVAVUUAAAAAVFBFEUUEQAAAAAAQBUAAAAAAAEAAUFRQARFEUUAAVFBFAEAUAAAAAEQQFAAAAABAAUAEBUUUAAAAAAABQAFQAAUQAAAQqRQEhQAUARYAJQAWEAABAAFIAotQEBYAJVACigEAUf/2Q==">
+        <source src="vibeo/purplevideo.mp4" type="video/mp4">
+    </video>
+
+
+    <div id="myDIV">
+        <h1>‎‎‎‎‎‎‎</h1>
+        <button onmousemove="randomonaction()"
+            class="w3-button w3-red w3-padding-large w3-large w3-margin-top">X</button>
+    </div>
+
+    <script>
+        function randomonaction() {
+            document.getElementById("myDIV").style.right = Math.floor(Math.random() * (1280 - 0 + 1) + 0) + "px";;
+            document.getElementById("myDIV").style.top = Math.floor(Math.random() * (300 - 0 + 1) + 0) + "px";;
+        }
+    </script>
+
+
+
+    <div class="w3-top">
+        <div class="w3-bar w3-light-grey w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="pradatest.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Shoes</a>
+            <a href="music.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Music</a>
+            <a href="film.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Film</a>
+        </div>
+
+
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Music</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Film</a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <div class="navbar-nav">
+
+
+
+                    <header class="w3-container w3-black w3-center" style="padding:128px 16px">
+                        <h1 class="w3-margin w3-jumbo">Shoes</h1>
+                    </header>
+
+
+
+                    <div class="w3-row-padding w3-padding-64 w3-container">
+                        <div class="w3-content">
+
+                        </div>
+                    </div>
+                    <h2>Cool shoes I found</h2>
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Brand</th>
+                                <th>Name</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>1.</td>
+                            <td>Yves saitn laurent </td>
+                            <td><b><i>Paris Leather Suede</i></b></td>
+                            <td class="container"><img src="images/paris1.png" height="150px" width="150p"
+                                    alt="Picture of album cover for 'Cry' album - Stormy weather over a vast ocean">
+                                <div class="overlay">
+                                    <div class="text">$745</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Prada</td>
+                            <td><b><i>Suede lace-up Tims</i></b></td>
+                            <td class="container"><img src="images/booties.png" height="150px" width="150p"
+                                    alt="Picture of song cover for 'could cry just thinkin about you' - Troye sitting on a poolside looking meloncholy">
+                                <div class="overlay">
+                                    <div class="text">$1,170</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Balenciaga</td>
+                            <td><b><i>Sock sneakers</i></b></td>
+                            <td class="container"><img src="images/sock1.png" height="150px" width="150p"
+                                    alt="Picture of song cover for 'Hollywood' - Bongi holding a cake decorated with an instagram heart">
+                                <div class="overlay">
+                                    <div class="text">$792</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Timberland</td>
+                            <td><b><i>Tim pros</i></b></td>
+                            <td class="container"><img src="images/tims1.png" height="150px" width="150p"
+                                    alt="Picture of song cover for 'I Hate California' - LOUD HOUND casually looking down at the photographer">
+                                <div class="overlay">
+                                    <div class="text">$198</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Alaxander McQueen</td>
+                            <td><b><i>White slick highs</i></b></td>
+                            <td class="container"><img src="images/alex1.png" height="150px" width="150p"
+                                    alt="Picture of album cover for 'Cypress Grove' album - Glaive standing under a street sign labeled 'Cypress Grove'">
+                                <div class="overlay">
+                                    <div class="text">$750</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Dior</td>
+                            <td><b><i>B27 ballet highs</i></b>
+                            </td>
+                            <td class="container"><img src="images/rosedior1.png" height="150px" width="150p"
+                                    alt="Picture of song cover for 'Bye Bye' - Oscar stalling in water looking off into the horizon">
+                                <div class="overlay">
+                                    <div class="text">$1,512</div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+                    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+                        <div class="w3-xlarge w3-padding-32">
+                            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                            <i class="fa fa-instagram w3-hover-opacity"></i>
+                            <i class="fa fa-snapchat w3-hover-opacity"></i>
+                            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                            <i class="fa fa-twitter w3-hover-opacity"></i>
+                            <i class="fa fa-linkedin w3-hover-opacity"></i>
+                        </div>
+                        <p>Created by <a href="lead to prof-page" target="_blank">Oliver Jörgen Meyer</a></p>
+                    </footer>
+
+                    <script>
+
+                        function myFunction() {
+                            var x = document.getElementById("navDemo");
+                            if (x.className.indexOf("w3-show") == -1) {
+                                x.className += " w3-show";
+                            } else {
+                                x.className = x.className.replace(" w3-show", "");
+                            }
+                        }
+                    </script>
+
+</body>
+
+</html>
