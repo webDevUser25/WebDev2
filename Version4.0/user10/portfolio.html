@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 3.0
-        Name:
-        Date Completed:
+<!--Version 4.0
+        Name: dat
+        Date Completed: today
     -->
 
 <head>
 
-    <title>Web Dev User ## </title>
+    <title>My Work as a Web Developer</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Version 3.0">
+    <meta name="description" content="WebDev Version 4.0">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -42,52 +42,42 @@
             text-align: center;
         }
 
-        h3 {
-            padding: 50px;
-            background-color: lavender;
-            display: inline-block;
+        #rainbow {
+            width: 100%;
         }
 
-        p {
-            padding-top: 5px;
-            padding-bottom: 50px;
-            padding-left: 30px;
-            padding-right: 5px;
-            background-color: lavender;
-            margin-bottom: 50px;
-            /* Add this */
+        #knowledge>* {
+            border: 3px red solid;
         }
 
-        strong {
-            margin: 50px;
-            background-color: lightblue;
+        div li::marker {
+            color: rgb(87, 150, 59);
         }
 
-        strong {
-            padding: 50px;
-            background-color: lightblue;
+        td:hover {
+            background-color: rgba(0, 0, 0, 0);
         }
-        
+
+
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------------------------------------>
+    <!---------------------------------- Begin the nav-bar ------------->
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="aboutme.html" class="nav-item nav-link active">About Me</a>
-                    <a href="music.html" class="nav-item nav-link active">Music</a>
-                    <a href="#" class="nav-item nav-link">Lists</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
-                        tabindex="-1">Contact</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="display.html" class="nav-item nav-link">Display</a>
+                    <a href="portfolio.html" class="nav-item nav-link active">Portfolio</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -95,31 +85,60 @@
                 </div>
             </div>
         </nav>
-        <!---------------------------------- End the nav-bar ------------------------------------->
     </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3 title" tabindex="0">Check out my work!</h1>
+        <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h3>Headings Are Block Elements</h3>
-        <div style='padding-top: 1px'></div>  <!-- Add this -->
+        <h3 id="topHeading">I'm a Web Developer</h3>
+        <div id="knowledge">
+            <li>CSS
+                <ul>
+                    <li>Classes</li>
+                    <li>Selectors</li>
+                    <li>ID's</li>
+                </ul>
+            </li>
+            <li>HTML
+                <ul>
+                    <li>Tables</li>
+                    <li>DIV's</li>
+                    <li>Nav Bar</li>
+                </ul>
+            </li>
+        </div>
+        <p>
+            These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
+        </p>
+        <p>
+            I will use my knowledge to create an amazing website for you and your needs.
+        </p>
 
-        <p>paragraphs are blocks, too.<em>However</em>, &lt;em&gt; and &lt;strong&gt;
-            elements are not. They are <strong>inline</strong> elements.</p>
-
-        <p>Block elements define the flow of the HTML document, while inline elements
-            do not.</p>
-
-        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+            </table>
+        </div>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 
     <!---------------------------------- Begin the footer ------------->
-    <footer class="wideMargin">
-        <div>
-            Webpage made by <a href="#" target="_blank">[your name]</a>
-        </div>
+    <footer>
+        <span class="title">Example of a Footer Title</span>
+        <table id="footerTable">
+            <tr>
+                <td>
+                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </td>
+            </tr>
+        </table>
     </footer>
     <!---------------------------------- End the footer ------------->
 </body>
