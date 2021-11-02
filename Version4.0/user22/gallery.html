@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 4.0
+        Name: David Guzman
+        Date Completed: 10-26-2021
+    -->
+
+<head>
+
+  <title>Gallery</title>
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="WebDev Version 4.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/gallery.css">
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- JavaScript -->
+  <!-- These are needed to get the responsive menu to work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Custom styles for this template -->
+  <style type="text/css">
+    menu {
+      margin: 0;
+      padding: 0;
+    }
+
+    .wideMargin {
+      margin: 15px;
+    }
+
+    footer {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .rainbow {
+      width: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Float four columns side by side */
+    .container-card{
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <!---------------------------------- Begin the nav-bar ------------->
+  <menu>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+          <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="display.html" class="nav-item nav-link">Display</a>
+          <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+          <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+          <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+        </div>
+        <div class="navbar-nav ml-auto">
+        </div>
+      </div>
+    </nav>
+  </menu>
+  <!---------------------------------- End the nav-bar ------------------------------------->
+
+  <main class="wideMargin">
+
+    <h1 class="text-left my-3 title" tabindex="0">Check out my favorite images</h1>
+    <!-- Edit this line for the title of your page -->
+
+    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+    <div id="gallery">
+      <p>Hover over the images to get the answer</p>
+      <div class="container-card">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/Minnesota-United-FC-symbol.jpg" height="230px" alt="Minnesota-United-FC-symbol">
+            <p class="caption">Minnesota United</p>
+          </div>
+          <div class="back">
+            <a href="https://www.google.com/search?q=mn+united+logo&sxsrf=AOaemvIvfADWTcCenP7nFeM9cXhKla_Xrg:1635294762524&tbm=isch&source=iu&ictx=1&fir=7vHpntQhQVOTHM%252C-ucD4hTo7YoBZM%252C_%253B2YPNxMPq48A1bM%252CQXS24bXpb5cs6M%252C_%253BS_szgiy8JzJy9M%252CQXS24bXpb5cs6M%252C_%253BtTNmSZIpffU9pM%252CQ_rn1Eo6Ezn8LM%252C_%253BAdSMoSD_Qt3uVM%252CM2XPa6-Q9G6m8M%252C_%253BKJavZHTjs4lBmM%252CQXS24bXpb5cs6M%252C_%253B_TejlwWFv-PlxM%252CL1rm0lqXsYwjkM%252C_%253BlQGGA7RbVFHyCM%252CCx-RCuzrm73sQM%252C_%253BAzYUYeNBRhyzCM%252CmKrmTH21G8IZkM%252C_%253BduYK1kmXJKIQBM%252CwfehwkccdrJQmM%252C_%253B-1hb1c-OCMNmwM%252Ckf8qftKKD81nxM%252C_%253BBsC-dT2zkVAVVM%252Cj6F1sjPRl_RfNM%252C_%253BemsDX8m0qjsbuM%252CYEotjaPjGY32qM%252C_%253BxGcfv8tt377OCM%252ChWhcqc5FpmSw4M%252C_&vet=1&usg=AI4_-kSpYHQYiX9ordPC5OrHv2Ujpuxz0g&sa=X&ved=2ahUKEwio07Dbq-nzAhVbHc0KHb6lBesQ9QF6BAgSEAE&safe=active&ssui=on#imgrc=KJavZHTjs4lBmM"
+              target="_blank">
+              <h1>MN logo</h1>
+            </a>
+            <p class="description">The blue line across the logo represents the Mississippi River. Either side of the
+              blue represents the cities of Saint Paul and Minneapolis. The gray color represents the Iron Range of
+              Minnesota.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="gallery">
+        <div class="container-card">
+          <div class="flipper">
+            <div class="front">
+              <img src="images/El Salavdor Flag.png" height="230px" alt="El Salavdor Flag">
+              <p class="caption">El Salvador</p>
+            </div>
+            <div class="back">
+              <a href="https://www.google.com/search?q=el+salvador+flag&sxsrf=AOaemvLaQ48cQJbfaP3_VfjjMf6pzSHIdg:1635295115977&tbm=isch&source=iu&ictx=1&fir=8wfBf2WXxLWSWM%252CIbXbVau9ovLyrM%252C_%253BazbH6Rq32rdt3M%252C6cwfJOhJY8N8YM%252C_%253Bx8b-tT79dddzWM%252CwKJf1HYdNFXcPM%252C_%253BxTXlNhDOZK5VYM%252C0T3dtUsOiGXO4M%252C_%253BZ_GsAN85rSq44M%252CuJX0wgVroIjotM%252C_%253Bf8mC-RtcyU8uIM%252CF5aaWZCN6_D3sM%252C_&vet=1&usg=AI4_-kSd3eUL6PDDeU40kB1ef16D3ZPepw&sa=X&ved=2ahUKEwi87_WDrenzAhXXXc0KHQQJAIQQ_B16BAhREAE&safe=active&ssui=on#imgrc=Z_GsAN85rSq44M"
+                target="_blank">
+                <h1>El Salavdor Flag</h1>
+              </a>
+              <p class="description">consists of three horizontal blue-white-blue stripes, respectively. This sorting
+                symbolizes the sky, peace and the ocean, dividing the flag horizontally into three equal parts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="gallery">
+          <div class="container-card">
+            <div class="flipper">
+              <div class="front">
+                <img src="images/Netflix Logo.png" height="230px" alt="Netflix Logo">
+                <p class="caption">Movies, TV Shows</p>
+              </div>
+              <div class="back">
+                <a href="https://www.google.com/search?q=netflix&tbm=isch&chips=q:netflix,g_1:logo:RrDIXT4GCwA%3D&hl=en&sa=X&ved=2ahUKEwjltJWGrunzAhWHA80KHXtlDmQQ4lYoAHoECAEQEQ&biw=1425&bih=789&safe=active&ssui=on"
+                  target="_blank">
+                  <h1>Netflix</h1>
+                </a>
+                <p class="description">Netflix is a streaming service that offers a wide variety of award-winning TV
+                  shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="gallery">
+            <div class="container-card">
+              <div class="flipper">
+                <div class="front">
+                  <img src="images/Apple Music.jpg" height="230px" alt="Apple Music">
+                  <p class="caption">Playlists, Songs</p>
+                </div>
+                <div class="back">
+                  <a href="https://www.google.com/search?q=apple+music&tbm=isch&hl=en&chips=q:apple+music,g_1:logo:0J3hfjYr15o%3D&sa=X&ved=2ahUKEwiX8f6cr-nzAhUbGs0KHQlNCqcQ4lYoAHoECAEQEg&biw=1425&bih=789&safe=active&ssui=on"
+                    target="_blank">
+                    <h1>Music</h1>
+                  </a>
+                  <p class="description">Apple Music is a music and video streaming service developed by Apple Inc.
+                    Users select music to stream to their device on-demand, or they can listen to existing playlists.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+            <!---------------------------------- Begin the footer ------------->
+    <footer>
+      <span class="title">Example of a Footer Title</span>
+      <table id="footerTable">
+          <tr>
+              <td>
+                  <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+              </td>
+              <td>
+                  <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+              </td>
+              <td>
+                  <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+              </td>
+          </tr>
+      </table>
+  </footer>
+  <!---------------------------------- End the footer ------------->
+  </main>
+</body>
+
+</html>

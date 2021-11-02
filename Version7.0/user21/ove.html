@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 7.0 
+    Name:  
+    Date Completed: 
+-->
+
+<head>
+  <title>love Webpage</title>
+
+  <!-- Bootstrap meta data -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Introduction to JavaScript">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- Animate -->
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- JavaScript -->
+  <!-- These are needed to get the responsive menu to work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div style="position:relative;left:0px;top:0px">
+    <span id="highlighter"
+      style="position:absolute;left:0;top:0;font-size:18px;font-family:Verdana;background-color:rgb(255, 0, 212);clip:rect(0px 0px auto 0px)"></span>
+  </div>
+
+  <center>
+    <FORM name="live">
+
+      Please enter your age::<INPUT TYPE="text" NAME="age" VALUE="" SIZE=20>
+      Example: (november 1,1966) <BR><BR><BR>
+      <INPUT TYPE="button" NAME="start" VALUE="Start Timer" ONCLICK="lifetimer(this.form)">
+
+      <INPUT TYPE="reset" NAME="resetb" VALUE="Reset Age">
+
+      <BR><BR>
+
+      <TABLE border=0>
+        <TR>
+          <TD>You are days old:</TD>
+
+          <TD>
+
+            <INPUT TYPE="text" NAME="time1" VALUE="" size=8>
+
+          </TD>
+
+        </TR>
+
+        <TR>
+          <TD>Plus hours old:</TD>
+
+          <TD>
+
+            <INPUT TYPE="text" NAME="time2" VALUE="" size=8>
+
+          </TD>
+
+        </TR>
+
+        <TR>
+          <TD>Plus minutes old:</TD>
+
+          <TD><INPUT TYPE="text" NAME="time3" VALUE="" size=8></TD>
+
+        </TR>
+      </TABLE>
+    </FORM>
+  </center>
+  <script language="JavaScript">
+
+    function calc() {
+
+      first = document.loveform.name1.value.toUpperCase();
+      firstlength = document.loveform.name1.value.length;
+      second = document.loveform.name2.value.toUpperCase();
+      secondlength = document.loveform.name2.value.length;
+      var LoveCount = 0;
+      var RandoGen = Math.floor(Math.random() * 100);
+
+      for (Count = 0; Count < firstlength; Count++) {
+
+        letter1 = first.substring(Count, Count + 1);
+
+        if (letter1 == 'L') LoveCount += 2;
+        if (letter1 == 'O') LoveCount += 2;
+        if (letter1 == 'V') LoveCount += 2;
+        if (letter1 == 'E') LoveCount += 2;
+        if (letter1 == 'Y') LoveCount += 3;
+        if (letter1 == 'O') LoveCount += 1;
+        if (letter1 == 'U') LoveCount += 3;
+      }
+
+
+      for (Count = 0; Count < secondlength; Count++) {
+        letter2 = second.substring(Count, Count + 1);
+        if (letter2 == 'L') LoveCount += 2;
+        if (letter2 == 'O') LoveCount += 2;
+        if (letter2 == 'V') LoveCount += 2;
+        if (letter2 == 'E') LoveCount += 2;
+        if (letter2 == 'Y') LoveCount += 3;
+        if (letter2 == 'O') LoveCount += 1;
+        if (letter2 == 'U') LoveCount += 3;
+      }
+
+      amount = 0;
+
+      if (LoveCount > 0) amount = 5 - ((firstlength + secondlength) / 2)
+      if (LoveCount > 2) amount = 10 - ((firstlength + secondlength) / 2)
+      if (LoveCount > 4) amount = 20 - ((firstlength + secondlength) / 2)
+      if (LoveCount > 6) amount = 30 - ((firstlength + secondlength) / 2)
+      if (LoveCount > 8) amount = 40 - ((firstlength + secondlength) / 2)
+
+      if (LoveCount > 10) amount = 50 - ((firstlength + secondlength) / 2)
+
+      if (LoveCount > 12) amount = 60 - ((firstlength + secondlength) / 2)
+      if (LoveCount > 14) amount = 70 - ((firstlength + secondlength) / 2)
+      if (LoveCount > 16) amount = 80 - ((firstlength + secondlength) / 2)
+      if (LoveCount > 18) amount = 90 - ((firstlength + secondlength) / 2)
+      if (LoveCount > 20) amount = 100 - ((firstlength + secondlength) / 2)
+      if (LoveCount > 22) amount = 110 - ((firstlength + secondlength) / 2)
+      if (firstlength == 0 || secondlength == 0) amount = RandoGen;
+      if (amount < 0) amount = 0;
+      if (amount > 99) amount = 99;
+
+      document.loveform.output.value = amount + "%";
+    }
+
+  </script>
+
+  <center>
+
+    <td align=center valign=top>
+
+      </FORM>
+
+      <script type="text/javascript">
+
+        var tickercontents = new Array()
+        tickercontents[0] = 'Not a match try again with someone else!'
+        tickercontents[1] = 'Lonely? then stop playing this game!'
+        tickercontents[2] = 'Why are you still here? I am not judging but sounds as if you are lonely'
+        tickercontents[3] = 'You know if your 18 you can use tinder not saying it would help but it is a start...'
+        tickercontents[4] = 'So does your parents love you genuine question not trying to be offensive or anything'
+        tickercontents[5] = 'ok so you must be a coder to be on this page because wow this is just a long time'
+        tickercontents[6] = 'Hate speech is just another form of constructice critisem '
+        tickercontents[7] = 'Okay.'
+        var tickdelay = 3000
+        var highlightspeed = 10
+
+        var currentmessage = 0
+        var clipwidth = 0
+
+        function changetickercontent() {
+          crosstick.style.clip = "rect(0px 0px auto 0px)"
+          crosstick.innerHTML = tickercontents[currentmessage]
+          highlightmsg()
+        }
+        function highlightmsg() {
+          var msgwidth = crosstick.offsetWidth
+          if (clipwidth < msgwidth) {
+            clipwidth += highlightspeed
+            crosstick.style.clip = "rect(0px " + clipwidth + "px auto 0px)"
+            beginclip = setTimeout("highlightmsg()", 20)
+          }
+          else {
+            clipwidth = 0
+            clearTimeout(beginclip)
+            if (currentmessage == tickercontents.length - 1) currentmessage = 0
+            else currentmessage++
+            setTimeout("changetickercontent()", tickdelay)
+          }
+        }
+
+        function start_ticking() {
+          crosstick = document.getElementById ? document.getElementById("highlighter") : document.all.highlighter
+          crosstickParent = crosstick.parentNode ? crosstick.parentNode : crosstick.parentElement
+          if (parseInt(crosstick.offsetHeight) > 0)
+            crosstickParent.style.height = crosstick.offsetHeight + 'px'
+          else
+            setTimeout("crosstickParent.style.height=crosstick.offsetHeight+'px'", 100)
+          changetickercontent()
+        }
+
+        if (document.all || document.getElementById)
+          window.onload = start_ticking
+
+      </script>
+
+      <FORM name="loveform">
+
+        <P><INPUT value="Lovemate" name="name1" type="text" size="20"> + <INPUT value="Lovemate2" name="name2"
+            type="text" size="20"> = <INPUT value name="output" type="text" size="6"> <BR>
+
+          <BR>
+
+          <INPUT value="Calculate!" name="calculate" type="button" value="calculate" onclick="calc()">
+        </P>
+        </DIV>
+
+        <SCRIPT LANGUAGE="JavaScript">
+
+          var display_text = "Sadly, Denmark is an unlikely place "
+            + "to find gray elephants and orange kangaroos!  "
+            + "     There are more cool stuff like this "
+            + "throughout my site!  Check 'em out!!!!!!!!!!"
+          var display_text; var place; var meter;
+          var out = " "; var place = 50;
+
+          function scroll_text() {
+            for (meter = 0; meter < place; meter++) {
+              out += " "
+            }
+            if (place >= 0)
+              out += display_text
+            else out = display_text.substring(-place, display_text.length)
+            document.scroll_form.field.value = out
+            out = " "
+            place--
+            if (place < -(display_text.length)) {
+              place = 50
+            }
+            setTimeout('scroll_text()', 100)
+          }
+  // -->
+        </SCRIPT>
+
+  </center>
+  </FORM>
+  <SCRIPT LANGUAGE="JAVASCRIPT">
+
+    function lifetimer() {
+
+      today = new Date()
+
+      BirthDay = new Date(document.live.age.value)
+
+      timeold = (today.getTime() - BirthDay.getTime());
+
+      sectimeold = timeold / 1000;
+
+      secondsold = Math.floor(sectimeold);
+
+      msPerDay = 24 * 60 * 60 * 1000;
+
+      timeold = (today.getTime() - BirthDay.getTime());
+
+      e_daysold = timeold / msPerDay;
+
+      daysold = Math.floor(e_daysold);
+
+      e_hrsold = (e_daysold - daysold) * 24;
+
+      hrsold = Math.floor(e_hrsold);
+
+      minsold = Math.floor((e_hrsold - hrsold) * 60);
+
+      document.live.time1.value = daysold
+
+      document.live.time2.value = hrsold
+
+      document.live.time3.value = minsold
+
+      window.status = "Well at the moment you are " + secondsold + "............ seconds old.";
+
+      timerID = setTimeout("lifetimer()", 1000)
+
+    }
+    // -- done hiding from old browsers -->
+
+  </script>
+
+  <CENTER>
+    <TT>Please follow the instructions below carefully. Go through each step first before pressing the below button, or
+      you'll only ruin everything!
+      <P>
+      <OL>
+        <LI>Think of a number between 1 and 10.<P>
+        <LI>Multiply the number by 9.<P>
+        <LI>Add the digits of your result.<P>
+        <LI>Subtract 5 from your new number.<P>
+        <LI>Find the letter that corresponds to your number, if 1 = A, 2 = B, 3 = C, etc.<P>
+        <LI>Think of a country that begins with your letter.<P>
+        <LI>Write down the name of that country.<P>
+        <LI>Think of an animal beginning with the second letter of your country.<P>
+        <LI>Think of the color of that animal.<P>
+        <LI>Write down the animal and its color.<P>
+        <LI>Think of an animal that begins with the last letter of your country.<P>
+        <LI>Think of a fruit that begins with the last letter of this second animal.<P>
+        <LI>Write down the fruit and the animal.<P>
+      </OL>
+      <P>
+      <P>
+        When you are finished, touch analyze...
+      <FORM name="scroll_form">
+        <input type="button" name="button_one" value="Analyze..." onClick="scroll_text()">
+        <input type="text" name="field" size="50">
+        <p>
+      </form>
+  </CENTER>
+<script>
+  var Backwor1="forwards";
+var before = "downside"; 
+       {
+var after = "upside"; 
+}
+var Backwor2="Backwords";
+for (count=Backwor1.length; count >= 0; count--)
+Backwor2+=Backwor1.substring(count,count-1);
+document.write (before,Backwor2,after);
+
+</script>
+
+</body>

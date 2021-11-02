@@ -40,12 +40,12 @@ img {
     width: 100%;
 }
 
-.container, .front, .back {
+.card-container, .front, .back {
     width: 250px;
     height: 320px;
 }
 
-.container:hover .flipper {
+.card-container:hover .flipper {
     transform: rotateY(180deg);
   }
 

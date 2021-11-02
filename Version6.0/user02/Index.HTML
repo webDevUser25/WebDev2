@@ -1,18 +1,240 @@
+<!DOCTYPE html>
 <html lang="en">
-    <!--Version 6.0 
+<!--Version 6.0 
 	Name:
-	Date Completed:
+	Date Completed:10/15/2021
     -->
-    <head>
-        
-        <title>Web Development User #02</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #02</center>
-    
-    </body>
+
+<head>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon (1).ico" />
+
+    <title> Kitchen Recipes </title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Recipes of food">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        h3 {
+            padding: 50px;
+            background-color: rgb(243, 174, 214);
+        }
+
+        h3 {
+            padding: 50px;
+            background-color: rgb(173, 154, 127);
+            display: inline-block;
+        }
+
+        p {
+            padding-top: 5px;
+            padding-bottom: 50px;
+            padding-left: 30px;
+            padding-right: 5px;
+            background-color: rgb(194, 173, 145);
+        }
+
+        p {
+            padding: 5px 50px 30px 5px;
+            margin-bottom: 50px;
+            /* Add this */
+        }
+
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #bd9e91;
+            margin-bottom: 15px;
+        }
+
+        .demo-content.bg-alt {
+            background: #fff3db;
+        }
+
+        .bs-example {
+            margin: 20px;
+        }
+        .bg-dark{
+            background-color: #998278 !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">What to cook</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="Breakfast.html" class="nav-item nav-link">Breakfast </a>
+                    <a href="Partyfood.html" class="nav-item nav-link" tabindex="-1">Party food</a>
+                    <a href="Drinks.html" class="nav-item nav-link ">Drinks</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+        </nav>
+
+    </menu>
+    <figure>
+    <main class="wideMargin">
+        <img src="images/Screen Shot 2021-10-13 at 2.23.44 PM.png" height="450" width="80">
+    </figure>
+        <h1 class="text-left my-3"></h1><!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <h3><i>I'm cooking </i></h3>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <p>Here you will find easy, rich, and quick breakfast recipes</p>
+
+        <p>
+            You have a party and you do not know what snacks to give, also you do 
+            not want to waste a lot of time, do not worry here we will give you some ideas
+        </p>
+
+
+        <div class="container mt-3">
+            <!--Row with two equal columns-->
+            <div class="row">
+                <div class="col-md-6">
+                    <!--Flipper-->
+                    <div id="gallery">
+                        <div class="container-card">
+                            <div class="flipper">
+                                <div class="front">
+                                    <img src="images/Screen Shot 2021-10-13 at 1.44.07 PM.png" alt="We have a solution">
+
+                                </div>
+                                <div class="back">
+                                    <a href="images/text.jpeg" target="_blank">
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <!--6 grid-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="demo-content">
+                                    <img
+                                        src="https://patch.com/img/cdn20/users/22959540/20171109/061020/styles/raw/public/processed_images/8344283689_cd02ca17c4_z-1510268887-595.jpg">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="demo-content bg-alt">
+                                    <img src="images/food.jpeg"></img>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="demo-content bg-alt"><img
+                                        src="https://www.twopeasandtheirpod.com/wp-content/uploads/2017/09/Sweet-and-Salty-Snack-Board-3.jpg"></img>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="demo-content">
+                                    <img
+                                        src="https://www.thedailymeal.com/sites/default/files/story/2018/0000%20HERO%20iStock.jpg">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="demo-content bg-alt"><img
+                                        src="https://cdn7.kiwilimon.com/ss_secreto/2832/640x426/th5-640x426-2832.jpg.webp"></img>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+    </main>
+    <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Call to action -->
+      <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+          <h5 class="mb-1">Register for free</h5>
+        </li>
+        <li class="list-inline-item">
+          <a href="#!" class="btn btn-outline-white btn-rounded">Sign up!</a>
+        </li>
+      </ul>
+      <!-- Call to action -->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">i'm cooking, follow us 
+      <a href="https://www.instagram.com/"> Instagram</a>
+      <a href="https://www.facebook.com/"> Facebook</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+</body>
 
 </html>

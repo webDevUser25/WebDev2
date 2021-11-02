@@ -1,11 +1,10 @@
 <?php
-$apiKey = "API KEY"; //You will need to add in the 
-$cityId = "5046997"; //5046997 Shakopee City Id
-$units = "metric";//metric-Celcius  imperial-Farhenheit
-if ($units == 'metric'){//Changes the $temp varaible to match 
+$apiKey = "28932c70845fb3507668485fd5ee6890"; //You will need to add in the
+$cityId = "5815135"; //5046997 Shakopee City Id
+$units = "imperial"; //metric-Celcius  imperial-Farhenheit
+if ($units == 'metric') { //Changes the $temp varaible to match
     $temp = "C";
-}
-else {
+} else {
     $temp = "F";
 }
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
@@ -33,8 +32,8 @@ $currentTime = time();
 <style>
 body {
     font-family: Arial;
-    font-size: 0.95em;
-    color: #929292;
+    font-size: 1em;
+
 }
 
 .report-container {
@@ -43,6 +42,15 @@ body {
     border-radius: 2px;
     width: 550px;
     margin: 0 auto;
+    background-color: <?php
+if ($data->main->temp >= 50) {
+    echo 'blue';
+}
+
+if ($data->main->temp < 50) {
+    echo 'green';
+}
+?>;
 }
 
 .weather-icon {
@@ -74,7 +82,7 @@ span.min-temperature {
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
             <div><?php echo date("l g:i a", $currentTime); ?></div>
-            <div><?php echo date("jS F, Y",$currentTime); ?></div>
+            <div><?php echo date("jS F, Y", $currentTime); ?></div>
             <div><?php echo ucwords($data->weather[0]->description); ?></div>
         </div>
         <div class="weather-forecast">

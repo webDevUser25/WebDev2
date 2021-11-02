@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 7.0 
-    Name:  
+    Name: Jason Zhou
     Date Completed: 
 -->
 
@@ -39,12 +39,11 @@
     <main>
         <div id="built-in-functions">
             <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
+            <h1 onMouseover="alert('GO Sabers!'); alert('Hello'); alert('Goodbye');" value="Click Me!" style="display:inline-block;">Shakopee High
+                School</h1>
             <!--PRINT-->
             <script>
-                function printWindow(){
+                function printWindow() {
                     window.print();
                 }
             </script>
@@ -178,8 +177,23 @@
             function secondSelector() {
                 var x = document.querySelectorAll("li");
                 var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.backgroundColor = "#17a2b8";
+                for (i = 0; i < x.length; i=i+2) {
+                    x[i].style.color = "#17a2b8";
+                }
+                var x = document.querySelectorAll("li");
+                var i;
+                for (i = 1; i < x.length; i=i+2) {
+                    x[i].style.color = "#b8b8b8";
+                }
+                var x = document.querySelectorAll("ol li li");
+                var i;
+                for (i = 1; i < x.length; i=i+2) {
+                    x[i].style.color = "#17a2b8";
+                }
+                var x = document.querySelectorAll("ol li li");
+                var i;
+                for (i = 0; i < x.length; i=i+2) {
+                    x[i].style.color = "#b8b8b8";
                 }
             }
             function thirdSelector() {
@@ -215,6 +229,52 @@
     </main>
     <div id="container" style="height: 3000px; width: 1000px;">
         <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
+    </div>
+    <hr>
+    <br>
+    <div>
+        <table border="0" width="350" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img border="0" src="../user36/images/roulette.jpeg" width="152" height="216"></td>
+              <td>
+          <form name="total">
+            Input total amount of bullets wanted: <br>
+            <input value=1 name="totalBullets" size=3 type="text"></input>
+          </form> 
+          <form name="fire">
+          Load number of bullets:<br /><input name="bullets" type="text" size=3 value=1><br />
+          
+          <p>
+          <input name="message" type="button" value="Play Roulette!" onClick="fireit()">
+          </p>
+          
+          </form>
+          <script>
+          
+          //Russian Roulette Game- by javascriptkit.com
+          //Visit JavaScript Kit (http://javascriptkit.com) for script
+          //Credit must stay intact for use
+
+          function fireit(){
+          var theone=Math.floor(Math.random()*document.total.totalBullets.value)
+          
+          if (theone<=document.fire.bullets.value-1)
+          alert("Bang. You\'re dead!")
+          else{
+          document.fire.message.value="Whew. Got lucky!"
+          setTimeout("document.fire.message.value='Play Roulette'",500)
+          }
+          }
+          
+          </script>
+          
+          <p align="center">This free script provided by<br />
+          <a href="http://javascriptkit.com">JavaScript
+          Kit</a></p>
+          
+          </td>
+            </tr>
+          </table>
     </div>
 </body>
 

@@ -9,7 +9,6 @@ button{
 }
 
 ol {
-
   list-style-type: decimal-leading-zero;
 }
 
@@ -30,4 +29,15 @@ h1 {
   font-weight: 400;
   border-bottom: 1px solid black;
   margin-bottom: 1em;
+}
+body {
+	font-family: 'Times New Roman', serif;
+  }
+body{
+  background-image: url(../images/blue-abstract-texture-vector-background-can-be-used-cover-design-book-design-poster-cd-cover-website-backgrounds-vector-151014745.jpg);
+  background-repeat: no-repeat;
+  background-size: 135%;
+}
+.bg-dark{
+  background-color: blue !important;
 }
