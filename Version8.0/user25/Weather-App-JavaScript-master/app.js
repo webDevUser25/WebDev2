@@ -18,7 +18,7 @@ weather.temperature = {
 // APP CONSTS AND VARS
 const KELVIN = 273;
 // API KEY
-const key = "YOUR KEY HERE";
+const key = "893829b44b264160feabf8beed212f3c";
 var latitude = 44.7974;
 var longitude = -93.5273;
 
