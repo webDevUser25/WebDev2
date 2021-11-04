@@ -1,5 +1,9 @@
-// Tutorial by http://youtube.com/CodeExplained
-// api key : 82005d27a116c2880c8f0fcb866998a0
+const key = "893829b44b264160feabf8beed212f3c";
+
+// Since the GeoLocation is not avaliable we can hard code the coordinates
+// Shakopee 44.7974' -93.5273'
+var latitude = "44.7974";
+var longitude = "-93.5273";
 
 // SELECT ELEMENTS
 const iconElement = document.querySelector(".weather-icon");
@@ -17,13 +21,9 @@ weather.temperature = {
 
 // APP CONSTS AND VARS
 const KELVIN = 273;
-// API KEY
-const key = "893829b44b264160feabf8beed212f3c";
-var latitude = 44.7974;
-var longitude = -93.5273;
 
 // GET WEATHER FROM API PROVIDER
-function getWeather(latitude, longitude){
+function getWeather(){
     let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
     
     fetch(api)
